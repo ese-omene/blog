@@ -81,7 +81,7 @@ namespace blog
 
         public void Add_Post(BLOGPOST new_post)
         {
-            string query = "insert into blog (pagetitle, pagebody) values ('{0}','{1}')";
+            string query = "insert into blog_page (pagetitle, pagebody) values ('{0}','{1}')";
             query = String.Format(query, new_post.GetPTitle(), new_post.GetPBody());
 
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
